@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 add_filter('woocommerce_add_to_cart_validation', 'prevent_duplicate_cart_item', 10, 3);
 function prevent_duplicate_cart_item($passed, $product_id, $quantity) {
     foreach (WC()->cart->get_cart() as $cart_item) {
@@ -14,6 +15,8 @@ function prevent_duplicate_cart_item($passed, $product_id, $quantity) {
 
 
 
+=======
+>>>>>>> 1a345f53bf303ef4add3131a6410deda042cbdc2
 function my_theme_enqueue_styles() {
     $parent_style = 'generatepress-child-style';
     
@@ -74,7 +77,10 @@ add_filter( 'body_class', 'add_page_title_to_body_class' );
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1a345f53bf303ef4add3131a6410deda042cbdc2
 function my_child_theme_enqueue_scripts() {
     // Enqueue jQuery
     wp_enqueue_script('jquery');
@@ -117,6 +123,7 @@ add_action( 'widgets_init', 'custom_generatepress_widgets_init' );
 
 
 
+<<<<<<< HEAD
 // // Start session if not already started
 // add_action('init', 'start_session');
 // function start_session() {
@@ -141,25 +148,97 @@ function handle_custom_template_form() {
     }
 
     // Check if the form is submitted
+=======
+// Start session if not already started
+add_action('init', 'start_session');
+function start_session() {
+    if (!session_id()) {
+        session_start();
+    }
+	
+	
+}
+
+
+
+// Ensure WooCommerce session is started and cart is initialized
+add_action( 'wp_loaded', 'force_woocommerce_cart_session' );
+function force_woocommerce_cart_session() {
+    if ( WC()->cart && ! WC()->session->has_session() ) {
+        WC()->session->set_customer_session_cookie(true);
+    }
+}
+
+// Function to clear all products from WooCommerce cart before adding new product
+function clear_woocommerce_cart() {
+    if ( WC()->cart ) {
+        WC()->cart->empty_cart(); // Clear the cart before adding the new item
+    }
+}
+
+
+function handle_custom_template_form() {
+>>>>>>> 1a345f53bf303ef4add3131a6410deda042cbdc2
     if ( isset( $_POST['submit_form'] ) ) {
         // Sanitize and handle form inputs
         $fname = sanitize_text_field( $_POST['fname'] );
         $lname = sanitize_text_field( $_POST['lname'] );
         $email = sanitize_email( $_POST['email'] );
+<<<<<<< HEAD
 
         // Send email notification
         $to = array( "sohaib@freedommedia.com" );
+=======
+        $phone = sanitize_text_field( $_POST['phone'] );
+        $dob = sanitize_text_field( $_POST['dob'] );
+        $state = sanitize_text_field( $_POST['state'] );
+        $sex_assigned = sanitize_text_field( $_POST['sex-assigned'] );
+        $bmi = sanitize_text_field( $_POST['bmi'] );
+
+        // Handle checkboxes (Interests)
+        if ( isset( $_POST['interests'] ) && is_array( $_POST['interests'] ) ) {
+            $interests = array_map( 'sanitize_text_field', $_POST['interests'] );
+            $interests_list = implode( ', ', $interests );
+        } else {
+            $interests_list = 'None';
+        }
+
+        // Prepare data to be saved in JSON format
+        $form_data = array(
+            'first_name'    => $fname,
+            'last_name'     => $lname,
+            'email'         => $email,
+            'phone'         => $phone,
+            'dob'           => $dob,
+            'state'         => $state,
+            'sex_assigned'  => $sex_assigned,
+            'bmi'           => $bmi,
+            'interests'     => $interests_list,
+        );
+
+        // Store form data in session
+        $_SESSION['form_data'] = $form_data;
+
+        // Send email notification
+        $to = array( "ask@blueridgemeds.com" );
+>>>>>>> 1a345f53bf303ef4add3131a6410deda042cbdc2
         $subject = "New Form Submission";
         $body = "You have received a new form submission:\n\n";
         $body .= "First Name: $fname\n";
         $body .= "Last Name: $lname\n";
         $body .= "Email: $email\n";
+<<<<<<< HEAD
+=======
+        $body .= "Phone: $phone\n";
+        $body .= "State: $state\n";
+>>>>>>> 1a345f53bf303ef4add3131a6410deda042cbdc2
 
         $headers = array(
             'Content-Type: text/plain; charset=UTF-8',
             'From: Your Website <no-reply@yourdomain.com>'
         );
 
+<<<<<<< HEAD
         if ( wp_mail( $to, $subject, $body, $headers ) ) {
             // Product maps
             $product_map = array(
@@ -228,11 +307,83 @@ function handle_custom_template_form() {
                 exit;
             } else {
                 echo '<p>Error: No products added to the cart.</p>';
+=======
+        $mail_sent = wp_mail( $to, $subject, $body, $headers );
+
+        if ( $mail_sent ) {
+            // Map 'finalitem' values to product IDs
+            $product_map = array(
+                'tirze-3' => 354, 
+                'tirze-1' => 353, 
+                'semag-1' => 343, 
+                'semag-3' => 352, 
+                'oral'    => 355
+            );
+
+            // Check if 'finalitem' is present in the URL
+            if ( isset( $_GET['finalitem'] ) ) {
+                $final_item = sanitize_text_field( $_GET['finalitem'] );
+
+                if ( array_key_exists( $final_item, $product_map ) ) {
+                    $product_id = $product_map[ $final_item ];
+
+                    // Clear WooCommerce cart before adding the new item
+                    clear_woocommerce_cart();
+
+                    // Ensure WooCommerce cart is initialized
+                    if ( WC()->cart ) {
+                        // Add product to cart
+                        WC()->cart->add_to_cart( $product_id );
+
+                        // Check for 'discount' parameter
+                        if ( isset( $_GET['discount'] ) && $_GET['discount'] === 'apply' ) {
+                            // Check for 'finalitem' and apply corresponding coupons
+                            if ( strpos( $final_item, '3' ) !== false ) {
+                                $coupon_code = '1st-month-discount';
+                            } elseif ( strpos( $final_item, '1' ) !== false ) {
+                                $coupon_code = '1st-month-discount';
+                            }
+
+                            // Apply the determined coupon if set
+                            if ( isset( $coupon_code ) ) {
+                                if ( ! WC()->cart->has_discount( $coupon_code ) ) {
+                                    WC()->cart->apply_coupon( $coupon_code );
+                                }
+                                WC()->cart->calculate_totals(); // Recalculate totals
+                            }
+                        } else {
+                            // Default coupon logic if 'discount' parameter is not set
+                            $default_coupon_code = 'Newyear50';
+
+                            if ( ! WC()->cart->has_discount( $default_coupon_code ) ) {
+                                WC()->cart->apply_coupon( $default_coupon_code );
+                            }
+                            WC()->cart->calculate_totals(); // Recalculate totals
+                        }
+
+                        // Redirect to checkout if cart has items
+                        if ( WC()->cart->get_cart_contents_count() > 0 ) {
+                            wp_redirect( wc_get_checkout_url() );
+                            exit;
+                        } else {
+                            echo '<p>Error: Cart is empty after adding product.</p>';
+                        }
+                    } else {
+                        echo '<p>Error: WooCommerce cart not initialized.</p>';
+                    }
+                } else {
+                    echo '<p>Error: Invalid product selection.</p>';
+                }
+            } else {
+                wp_redirect( home_url("/thank-you") );
+                exit;
+>>>>>>> 1a345f53bf303ef4add3131a6410deda042cbdc2
             }
         } else {
             echo '<p>Error: Unable to send the email notification.</p>';
         }
     }
+<<<<<<< HEAD
 
     // Handle persisted session values (for cart reloads)
     $final_item = WC()->session->get( 'finalitem' );
@@ -255,6 +406,14 @@ function handle_custom_template_form() {
 }
 
 add_action( 'wp_loaded', 'handle_custom_template_form' );
+=======
+}
+
+add_action( 'init', 'handle_custom_template_form' );
+
+
+
+>>>>>>> 1a345f53bf303ef4add3131a6410deda042cbdc2
 
 
 
@@ -317,6 +476,16 @@ function populate_email_checkout_field() {
 
 
 
+<<<<<<< HEAD
+=======
+add_action('woocommerce_thankyou', 'clear_session_data');
+function clear_session_data() {
+    if (isset($_SESSION['form_data'])) {
+        unset($_SESSION['form_data']);
+    }
+}
+
+>>>>>>> 1a345f53bf303ef4add3131a6410deda042cbdc2
 
 
 
@@ -347,6 +516,7 @@ function hide_cart_message_on_checkout() {
 add_action('wp', 'hide_cart_message_on_checkout');
 
 
+<<<<<<< HEAD
 add_filter('woocommerce_customer_details_email', 'add_mailto_to_email_address', 10, 2);
 
 
@@ -401,6 +571,19 @@ function force_cart_update_after_add($cart_item_key, $product_id, $quantity, $va
 }
 
 // Set a maximum cart quantity of 1 for Any Pro items only End
+=======
+
+
+
+add_action('woocommerce_checkout_shipping', 'custom_woocommerce_checkout_shipping', 10);
+
+function custom_woocommerce_checkout_shipping() {
+    echo '<h3>Shipping Address</h3>';
+}
+
+
+
+>>>>>>> 1a345f53bf303ef4add3131a6410deda042cbdc2
 
 // Add custom CSS to WooCommerce emails.
 add_filter('woocommerce_email_styles', 'custom_woocommerce_email_styles');
@@ -423,3 +606,22 @@ function custom_woocommerce_email_styles($css) {
     ";
     return $css;
 }
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> 1a345f53bf303ef4add3131a6410deda042cbdc2

@@ -1,7 +1,16 @@
 /* Cart */
+<<<<<<< HEAD
 
 .woocommerce-cart .choose-plan-tabs-inner {
     display: none;
+=======
+#billing_address_1_field:after {
+    content: "Note: We can't ship to PO Box addresses";
+    font-size: 13px;
+    display: block;
+    color: red;
+    margin-left: 8px;
+>>>>>>> 1a345f53bf303ef4add3131a6410deda042cbdc2
 }
 span.subscription-price span.subscription-details:after {
     font-size: 17px !important;
@@ -10,6 +19,7 @@ span.subscription-price span.subscription-details:after {
 span.subscription-price span.subscription-details {
     font-size: 0;
 }
+<<<<<<< HEAD
 .woocommerce-cart .choose-booster-product-wrap.step-main-wrapper.step {
 	display:block !important;
 	    max-width: 1000px;
@@ -59,6 +69,12 @@ width: 100%;
 }
 
 
+=======
+.shipping-col-checkout-hide h3 {
+    display: none;
+}
+
+>>>>>>> 1a345f53bf303ef4add3131a6410deda042cbdc2
 /* .shipping_address {
     display: block !important;
 } */
@@ -158,8 +174,11 @@ h3#ship-to-different-address {
 }
 .custom-woocommerce-cart-main img {
     width: 110px;
+<<<<<<< HEAD
     height: 110px;
     object-fit: contain;
+=======
+>>>>>>> 1a345f53bf303ef4add3131a6410deda042cbdc2
 }
 .product-details-col {
     display: flex;
@@ -503,9 +522,13 @@ p#billing_address_1_field.po-box-warning:after {
     justify-content: space-between;
 }
 .custom-review-order-checkout-sec .product-image img {
+<<<<<<< HEAD
     width: 77px;
     height: 95px;
     object-fit: contain;
+=======
+    width: 70px;
+>>>>>>> 1a345f53bf303ef4add3131a6410deda042cbdc2
 }
 
 h3#order_review_heading {
@@ -631,6 +654,7 @@ label[for="payment_method_authorize_net_cim_credit_card"] {
     padding-top: 7px;
 }
 
+<<<<<<< HEAD
 /* cart empty css */
 
 .woocommerce-cart .return-to-shop {
@@ -691,6 +715,9 @@ label[for="payment_method_authorize_net_cim_credit_card"] {
 		font-size: 12px;
 		padding:5px 25px;
 	}
+=======
+@media only screen and (max-width: 768px) {
+>>>>>>> 1a345f53bf303ef4add3131a6410deda042cbdc2
 	
 	/* what expect css */
 	

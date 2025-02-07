@@ -58,7 +58,10 @@ Text Domain: generatepress-child
 	--soft-aqua:#F0F6F5;
 	--slate-blue:#536E84;
 	--moss-green:#B8D7D3;
+<<<<<<< HEAD
 	--dark-charcoal:#272727;
+=======
+>>>>>>> 1a345f53bf303ef4add3131a6410deda042cbdc2
 }
 
 * {
@@ -101,10 +104,23 @@ a.generate-back-to-top {
     position: relative;
     top: 4px;
 }
+<<<<<<< HEAD
+=======
+.page-id-367 .product-page-wrapper .product-img img {
+    max-width: 533px !important;
+}
+>>>>>>> 1a345f53bf303ef4add3131a6410deda042cbdc2
 
 .help-button-wrap span {
 	display:none;
 }
+<<<<<<< HEAD
+=======
+.discount-apply-glpy .jumpstart-plan-head-c,.discount-apply-glpy span.or-head-c {
+	
+	display:none !important;
+}
+>>>>>>> 1a345f53bf303ef4add3131a6410deda042cbdc2
 
 .header-content-wrapper {
     display: flex;
@@ -116,6 +132,15 @@ a.generate-back-to-top {
 .policy-checkbox-wrap input[type="checkbox"] + label::after {
     display: none !important;
 }
+<<<<<<< HEAD
+=======
+.page-id-365 .product-page-wrapper .product-img img {
+    width: 100%;
+    max-height: 750px;
+    object-fit: contain;
+    max-width: 500px;
+}
+>>>>>>> 1a345f53bf303ef4add3131a6410deda042cbdc2
 
 .grid-container {
     margin-left: auto;
@@ -186,9 +211,13 @@ input.submit.modify-plan, input.submit.modify-plan:hover {
 .site-header .inside-header .site-logo img {
     max-width: 100px;
 }
+<<<<<<< HEAD
 .page-id-367 .product-page-wrapper .product-img img {
     max-width: 533px !important;
 }
+=======
+
+>>>>>>> 1a345f53bf303ef4add3131a6410deda042cbdc2
 .site-header #site-navigation {
     width: 850px;
     display: flex;
@@ -1003,6 +1032,13 @@ span#agree-privacy-policy-error {
     margin: 30px 0 0;
 }
 
+<<<<<<< HEAD
+=======
+.stat-wrap {
+	display:none;
+}
+
+>>>>>>> 1a345f53bf303ef4add3131a6410deda042cbdc2
 .stat-wrap .member-success-stats {
     width: calc(33.33% - 30px);
     text-align: center;
@@ -1282,10 +1318,13 @@ span#agree-privacy-policy-error {
     gap: 0 15px;
 }
 
+<<<<<<< HEAD
 .three-month ul li:first-child {
 	font-weight:700 !important;
 }
 
+=======
+>>>>>>> 1a345f53bf303ef4add3131a6410deda042cbdc2
 .pricing-plans-tab-wrap .pricing-plans-tabs .tab-content ul li img {
     width: 12px;
 }
@@ -1437,6 +1476,18 @@ body.title-home .site-header .main-navigation .current_page_item {
     background-color: transparent;
 }
 
+<<<<<<< HEAD
+=======
+.site-info .disclaimer-fda-approved {
+	font-size: 12px;
+  	font-weight: 500;
+  	color: var(--white-color);
+  	text-align: center;
+	max-width: 80%;
+    margin: 0 auto 15px;
+}
+
+>>>>>>> 1a345f53bf303ef4add3131a6410deda042cbdc2
 /* Footer Styling end */
 
 /* Contact Us start */
@@ -1795,6 +1846,11 @@ body.title-home .site-header .main-navigation .current_page_item {
 
 }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 1a345f53bf303ef4add3131a6410deda042cbdc2
 .custom-form-header .custom-header-inner {
     display: flex;
     align-items: center;
@@ -2418,9 +2474,15 @@ body.title-home .site-header .main-navigation .current_page_item {
 }
 
 .choose-plan-tabs-wrap .step-description {
+<<<<<<< HEAD
   	text-align: left !important;
 	color: var(--navy-medium) !important;
   	font-weight: 600;
+=======
+  text-align: left !important;
+	color: var(--navy-medium) !important;
+  font-weight: 600;
+>>>>>>> 1a345f53bf303ef4add3131a6410deda042cbdc2
 	font-size: 20px !important;
 }
 
@@ -2882,18 +2944,27 @@ body.title-home .site-header .main-navigation .current_page_item {
 
 .form-container .submit {
     width: 100%;
+<<<<<<< HEAD
 	background: var(--white-color);
     border: 1px solid #9CB2BE;
     color: var(--blue-light);
+=======
+    background: var(--blue-shadow);
+>>>>>>> 1a345f53bf303ef4add3131a6410deda042cbdc2
     border-radius: 10px;
     font-size: 16px;
     font-weight: 500;
     padding: 15px 0;
     display: inline-block;
 	text-align:center;
+<<<<<<< HEAD
 /* 	color:#fff;
 	background: var(--blue-shadow);
 	border: 1px solid var(--blue-shadow); */
+=======
+	color:#fff;
+    border: 1px solid var(--blue-shadow);
+>>>>>>> 1a345f53bf303ef4add3131a6410deda042cbdc2
     transition: 0.2s all;
     font-family: "Poppins", sans-serif;
 }
@@ -3001,10 +3072,13 @@ body.title-home .site-header .main-navigation .current_page_item {
 	margin:0 auto;
 }
 
+<<<<<<< HEAD
 .page-id-367 .product-page-wrapper .product-img img {
     max-width: 500px;
 }
 
+=======
+>>>>>>> 1a345f53bf303ef4add3131a6410deda042cbdc2
 .page-template-oral-semaglutide-landing-page .product-page-wrapper .product-img img {
     max-width: 533px !important;
 }
@@ -3042,6 +3116,7 @@ body.title-home .site-header .main-navigation .current_page_item {
 
 .product-page-wrapper .product-page-inner .product-details .product-price span {
     color: #646D7C;
+<<<<<<< HEAD
     text-decoration: line-through;
     padding-left: 15px;
 }
@@ -3059,6 +3134,10 @@ body.title-home .site-header .main-navigation .current_page_item {
 .title-oral-semaglutide .product-page-wrapper .product-page-inner .product-details .product-price span{
 	padding-left: 0;
 	text-decoration:none;
+=======
+/*     text-decoration: line-through;
+    padding-left: 15px; */
+>>>>>>> 1a345f53bf303ef4add3131a6410deda042cbdc2
 }
 
 .product-page-wrapper .product-page-inner .product-details .product-description {
@@ -3229,6 +3308,16 @@ body.title-home .site-header .main-navigation .current_page_item {
 
 /* Product Page Template Styles End */
 
+<<<<<<< HEAD
+=======
+.choose-plan-tabs-wrap .choose-plan-tabs-inner .step-main-heading  {
+	display:none;
+}
+
+.woocommerce-cart .choose-booster-product-wrap.step-main-wrapper.step {
+	display:none !important;
+}
+>>>>>>> 1a345f53bf303ef4add3131a6410deda042cbdc2
 
 /* Resposive Media Queries Start */
 
@@ -3539,6 +3628,13 @@ body.title-home .site-header .main-navigation .current_page_item {
         font-size: 18px;
     }
 	
+<<<<<<< HEAD
+=======
+	.site-info .disclaimer-fda-approved {
+		max-width: 100%;
+	}
+	
+>>>>>>> 1a345f53bf303ef4add3131a6410deda042cbdc2
 /* 	Tirzepatide banned styles */
 	
 	.breaking-news-wrapper {
@@ -3771,10 +3867,13 @@ body.title-home .site-header .main-navigation .current_page_item {
 }
 
 @media only screen and (max-width:768px) {
+<<<<<<< HEAD
 	.choose-plan-tabs-wrap .step-description {
 		font-size:15px !important;
 	}
 	
+=======
+>>>>>>> 1a345f53bf303ef4add3131a6410deda042cbdc2
 	.glp-medication-wrap .glp-medication-content {
         background-color: var(--off-white);
         padding: 30px;
@@ -3793,6 +3892,13 @@ body.title-home .site-header .main-navigation .current_page_item {
     }
 
 	
+<<<<<<< HEAD
+=======
+	.site-info .disclaimer-fda-approved {
+		font-size:11px;
+	}
+	
+>>>>>>> 1a345f53bf303ef4add3131a6410deda042cbdc2
 	/* choose doosage sections css resposive */
     
      .dosage_selection_cform .product-container {
@@ -4834,10 +4940,18 @@ form#customForm {
 
 /* Resposive Media Queries End */
 
+<<<<<<< HEAD
 @media only screen and (min-width:768px) {
 	div#icon-toggle-mob {
     display: none;
 	}
+=======
+
+@media only screen and (min-width:768px) {
+	div#icon-toggle-mob {
+    display: none;
+}
+>>>>>>> 1a345f53bf303ef4add3131a6410deda042cbdc2
 }
 
 @media (max-width: 576px) {
@@ -4849,6 +4963,7 @@ form#customForm {
 @media only screen and (max-width: 768px) {
     .product-marquee {
     margin-bottom: 130px;
+<<<<<<< HEAD
 	}
 }
 
@@ -5338,5 +5453,11 @@ form#customForm {
 	
 	.proceed_to_checkout {
 		margin-bottom:15px;
+=======
+}
+	
+	.choose-plan-tabs-wrap .step-description {
+		font-size:15px !important;
+>>>>>>> 1a345f53bf303ef4add3131a6410deda042cbdc2
 	}
 }

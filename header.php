@@ -24,6 +24,18 @@ if (!defined('ABSPATH')) {
 <!-- End Reddit Pixel -->
 	
 	
+<<<<<<< HEAD
+=======
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2QTKPH1WTT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2QTKPH1WTT');
+</script>
+>>>>>>> 1a345f53bf303ef4add3131a6410deda042cbdc2
 	
 	<!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -68,7 +80,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     ?>
 
 	<div class="main-announcement-bar">
+<<<<<<< HEAD
 		<a href="/get-started/" style="text-decoration:none;">Jump Into Holiday Savings | $100 OFF For First Time GLP-1 Users</a>
+=======
+		<a href="/get-started/" style="text-decoration:none;">Valentine’s Day special Sale | $50 OFF Any Dosage | $100 Off for New GLP-1 Users</a>
+>>>>>>> 1a345f53bf303ef4add3131a6410deda042cbdc2
 	</div>
     <header id="masthead" class="site-header">
         <div class="container">

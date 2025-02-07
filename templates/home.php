@@ -86,6 +86,11 @@
 	</div>
 <?php endif; ?>
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 1a345f53bf303ef4add3131a6410deda042cbdc2
 <section id="weightlossprograms" class="invest-guidance-wrap">
         <?php 
             $invest_guidance = get_field('guidance_details');
@@ -206,7 +211,11 @@
                 </div>
                 <!-- Monthly Membership Content -->
                 <?php if (have_rows('3_monthly_tab_content')): ?>
+<<<<<<< HEAD
                     <div id="3month" class="tab-grid tab-pane three-month">
+=======
+                    <div id="3month" class="tab-grid tab-pane">
+>>>>>>> 1a345f53bf303ef4add3131a6410deda042cbdc2
                             <?php while (have_rows('3_monthly_tab_content')): the_row(); 
                                 $membership_plan = get_sub_field('membership_plan');
                                 $plan_name = get_sub_field('plan_name');
@@ -270,6 +279,7 @@
     </div>
 </section>
 
+<<<<<<< HEAD
 <!-- Boosters Weight Product -->
 
 <section id="" class="invest-guidance-wrap boosters-weight-product">
@@ -322,6 +332,8 @@
     </div>
 </section>
 
+=======
+>>>>>>> 1a345f53bf303ef4add3131a6410deda042cbdc2
 <section id="howitworks" class="how-to-started-wrap">
     <div class="container">
         <?php 
@@ -561,6 +573,7 @@
     </div>
 </section>
 
+<<<<<<< HEAD
 
 <script>
 	jQuery(document).ready(function($) {
@@ -594,4 +607,6 @@
 
 
 
+=======
+>>>>>>> 1a345f53bf303ef4add3131a6410deda042cbdc2
 <?php get_footer() ?>

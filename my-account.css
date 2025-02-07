@@ -129,10 +129,13 @@
 	font-family: "Poppins", sans-serif;
 }
 
+<<<<<<< HEAD
 .page-id-238 .entry-title {
 	display:none !important;
 }
 
+=======
+>>>>>>> 1a345f53bf303ef4add3131a6410deda042cbdc2
 .woocommerce-MyAccount-content p {
     font-size: 16px !important;
 	line-height: 24px;
@@ -162,6 +165,21 @@
 	background-color:#F9F9F9;
 }
 
+<<<<<<< HEAD
+=======
+.page-id-238.logged-in .entry-title {
+    display: none !important;
+}
+
+.page-id-238 .entry-title {
+    display: block !important;
+}
+
+.title-my-account .entry-title {
+	text-transform: capitalize;
+}
+
+>>>>>>> 1a345f53bf303ef4add3131a6410deda042cbdc2
 .page-id-238 .inside-article {
 	background-color:#F9F9F9 !important;
 }
@@ -1120,6 +1138,24 @@ ul.woocommerce-PaymentMethods.payment_methods.methods .form-row {
 	.woocommerce-subscriptions, .woocommerce-view-subscription, a.woocommerce-button.button.view {
 		width: 100%;
 	}
+<<<<<<< HEAD
+=======
+	
+	.woocommerce table.my_account_orders .button, .woocommerce-view-subscription .shop_table a.button {
+    	width:100% !important;
+		margin:5px 0 !important;
+	}
+	
+	.payment-method-item a.button {
+		width:100%;
+		max-width:100%;
+	}
+	
+	#add_payment_method #payment ul.payment_methods li {
+		width:100% !important;
+		gap:0 !important;
+	}
+>>>>>>> 1a345f53bf303ef4add3131a6410deda042cbdc2
 }
 
 @media only screen and (max-width:767px) and (min-width:500px){

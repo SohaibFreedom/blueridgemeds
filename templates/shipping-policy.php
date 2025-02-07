@@ -24,7 +24,11 @@
 <section class="page-content-wrap shipping-policy-content">
     <div class="container">
         <div class="page-content-inner">
+<<<<<<< HEAD
             <p>Our services are presently accessible throughout the U.S., except in Alabama, Arkansas, California, Hawaii, Kansas, Michigan, Minnesota, and Mississippi. Once approved for the weight management program through our partnering provider network, you may receive your prescribed treatment within 5-10 business days. Your treatment will only be processed and dispatched after you've completed an online visit with a medical providers and have been cleared for treatment. We do not ship internationally at this time.</p>
+=======
+            <p>Our services are presently accessible throughout the U.S., except in Alabama, Arkansas, California, and Mississippi. Once approved for the weight management program through our partnering provider network, you may receive your prescribed treatment within 5-10 business days. Your treatment will only be processed and dispatched after you've completed an online visit with a medical providers and have been cleared for treatment. We do not ship internationally at this time.</p>
+>>>>>>> 1a345f53bf303ef4add3131a6410deda042cbdc2
             <p>Please note that BlueRidge Meds is not liable for incorrectly entered delivery addresses. Kindly verify your provided delivery address on your portal, and reach out to us at <a href="mailto:ask@blueridgemeds.com">ask@blueridgemeds.com</a> if you need assistance.</p>
         </div>
     </div>

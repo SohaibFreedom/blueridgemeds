@@ -18,7 +18,11 @@ get_header(); // This includes the header.php file
 .show-150-discount .three-month-tab-content p.pricing-discount.off-150-discount {
 	display:block !important;
 }
+<<<<<<< HEAD
 	.discount-apply-glpy li.month-3-tabs-selector,.discount-apply-glpy p.pricing-discount {
+=======
+	.discount-apply-glpy li.month-3-tabs-selector {
+>>>>>>> 1a345f53bf303ef4add3131a6410deda042cbdc2
 	display:none !important;
 }
 .discount-apply-glpy.choose-plan-tabs-wrap .tab-header li {
@@ -211,6 +215,7 @@ get_header(); // This includes the header.php file
 
 <div class="form-container">
     <form id="customForm" method="post" action="">
+<<<<<<< HEAD
 		
 		<!-- Choose Your Boosters Product Step -->
 		
@@ -308,6 +313,8 @@ get_header(); // This includes the header.php file
                 </div>
             </div>
 		</div>
+=======
+>>>>>>> 1a345f53bf303ef4add3131a6410deda042cbdc2
        
 		<!-- Medication Dosage Select -->
 		
@@ -362,7 +369,11 @@ get_header(); // This includes the header.php file
 				<h3 class="step-main-heading">Have you previously taken or are you currently on a GLP-1 medication?</h3>
 				<p class="step-description">Please select one</p>
 				<div class="button-wrapper">
+<<<<<<< HEAD
 					<input class="submit step-yes" type="button" value="Yes" onclick="removeDiscountParam();">
+=======
+					<input class="submit step-yes" type="button" value="Yes" onclick="showStep('mg-select'); removeDiscountParam();">
+>>>>>>> 1a345f53bf303ef4add3131a6410deda042cbdc2
 					<input class="submit step-no" type="button" value="No" onclick="handleContinueClick('step-5'); addDiscountParam();">
 				</div>
 			</div>
@@ -711,7 +722,11 @@ get_header(); // This includes the header.php file
                     </div>
                 </div>
                 <div class="step-continue-wrap">
+<<<<<<< HEAD
                  <input class="submit" type="button" value="Continue" onclick="addCartParameterAndShowNextStep('semag-1', 'boaster-step')">
+=======
+                 <input class="submit" type="button" value="Continue" onclick="addCartParameterAndShowNextStep('semag-1', 'step-privacy')">
+>>>>>>> 1a345f53bf303ef4add3131a6410deda042cbdc2
 
                     <p class="or">Or</p>
                     <input class="submit modify-plan" type="button" value="Modify your plan" onclick="showStep('step-all-products')">
@@ -772,7 +787,11 @@ get_header(); // This includes the header.php file
                                 </div>
                             </div>
                             <div class="step-continue-wrap">
+<<<<<<< HEAD
                                <input class="submit" type="button" value="Continue" onclick="addCartParameterAndShowNextStep('semag-3', 'boaster-step')">
+=======
+                               <input class="submit" type="button" value="Continue" onclick="addCartParameterAndShowNextStep('semag-3', 'step-privacy')">
+>>>>>>> 1a345f53bf303ef4add3131a6410deda042cbdc2
 
                                 <p class="or">Or</p>
 								<input class="submit modify-plan" type="button" value="Modify your plan" onclick="showStep('step-all-products')">
@@ -831,7 +850,11 @@ get_header(); // This includes the header.php file
                                 </div>
                             </div>
                             <div class="step-continue-wrap">
+<<<<<<< HEAD
                                 <input class="submit" type="button" value="Continue" onclick="addCartParameterAndShowNextStep('tirze-1', 'boaster-step')">
+=======
+                                <input class="submit" type="button" value="Continue" onclick="addCartParameterAndShowNextStep('tirze-1', 'step-privacy')">
+>>>>>>> 1a345f53bf303ef4add3131a6410deda042cbdc2
 
                                 <p class="or">Or</p>
                                 <input class="submit modify-plan" type="button" value="Modify your plan" onclick="showStep('step-all-products')">
@@ -890,7 +913,11 @@ get_header(); // This includes the header.php file
                                 </div>
                             </div>
                             <div class="step-continue-wrap">
+<<<<<<< HEAD
                                <input class="submit" type="button" value="Continue" onclick="addCartParameterAndShowNextStep('tirze-3', 'boaster-step')">
+=======
+                               <input class="submit" type="button" value="Continue" onclick="addCartParameterAndShowNextStep('tirze-3', 'step-privacy')">
+>>>>>>> 1a345f53bf303ef4add3131a6410deda042cbdc2
 
 
                                 <p class="or">Or</p>
@@ -947,7 +974,11 @@ get_header(); // This includes the header.php file
                                 </div>
                             </div>
                             <div class="step-continue-wrap">
+<<<<<<< HEAD
                                 <input class="submit" type="button" value="Continue" onclick="addCartParameterAndShowNextStep('oral', 'boaster-step')">
+=======
+                                <input class="submit" type="button" value="Continue" onclick="addCartParameterAndShowNextStep('oral', 'step-privacy')">
+>>>>>>> 1a345f53bf303ef4add3131a6410deda042cbdc2
 
                                 <p class="or">Or</p>
                               <input class="submit modify-plan" type="button" value="Modify your plan" onclick="showStep('step-all-products')">
@@ -997,7 +1028,11 @@ get_header(); // This includes the header.php file
 		<div class="step-main-wrapper choose-plan-tabs-wrap step" data-step="step-all-products">
     <div class="choose-plan-tabs-inner">
         <p class="step-description">CHOOSE YOUR PLAN</p>
+<<<<<<< HEAD
         <h3 class="step-main-heading">Jumpstart or Monthly</h3>
+=======
+        <h3 class="step-main-heading"><span class="jumpstart-plan-head-c">Jumpstart </span> <span class="or-head-c">or </span><span class="monthly-plan-head-c">Monthly</span> </h3>
+>>>>>>> 1a345f53bf303ef4add3131a6410deda042cbdc2
         <div class="pricing-plans-tabs choose-plan-tabs">
             <ul class="tab-header">
                 <li class="active monthly-tabs-selector"><a href="#monthly">Monthly Payment</a></li>
@@ -1122,7 +1157,11 @@ get_header(); // This includes the header.php file
                         <h4>Semaglutide Program</h4>
                         <p class="pricing-amount">$747</p>
                         <p class="pricing-discount">-$100.00 off your 1st purchase</p>
+<<<<<<< HEAD
 						<p class="pricing-discount off-150-discount" style="display:none;">-$150.00 off your 1st purchase</p>
+=======
+						<p class="pricing-discount off-150-discount" style="display:none;">-$100.00 off your 1st purchase</p>
+>>>>>>> 1a345f53bf303ef4add3131a6410deda042cbdc2
                         <img src="https://blueridgemeds.wpenginepowered.com/wp-content/uploads/2024/09/BlueRidge-Semaglutide-1-bottle-1.png" alt="">
                         <input class="submit" type="button" value="Select" onclick="addCartParameterAndShowNextStep('semag-3', 'step-semag-3')">
                     </div>
@@ -1155,7 +1194,11 @@ get_header(); // This includes the header.php file
                         <h4>Tirzepatide Program</h4>
                         <p class="pricing-amount">$1,047</p>
                         <p class="pricing-discount">-$100.00 off your 1st purchase</p>
+<<<<<<< HEAD
 						<p class="pricing-discount off-150-discount" style="display:none;">-$150.00 off your 1st purchase</p>
+=======
+						<p class="pricing-discount off-150-discount" style="display:none;">-$100.00 off your 1st purchase</p>
+>>>>>>> 1a345f53bf303ef4add3131a6410deda042cbdc2
                         <img src="https://blueridgemeds.wpenginepowered.com/wp-content/uploads/2024/09/Layer-5-1.png" alt="">
                         <input class="submit" type="button" value="Select" onclick="addCartParameterAndShowNextStep('tirze-3', 'step-tirze-3')">
                     </div>
@@ -1209,6 +1252,10 @@ get_header(); // This includes the header.php file
                 <h3 class="step-main-heading">By subscribing, you are agreeing to our Privacy Policy</h3>
                 <div class="policy-checkbox-wrap">
                     <input type="checkbox" id="policy-checkbox" name="agree_privacy_policy">
+<<<<<<< HEAD
+=======
+					
+>>>>>>> 1a345f53bf303ef4add3131a6410deda042cbdc2
                     <label for="policy-checkbox">Please check this box to indicate that you agree to the <a href="/terms-conditions/" target="_blank">Terms and Conditions Patient Agreement</a> and <a href="/consent-to-telehealth/" target="_blank">Telehealth Consent</a></label>
                 </div>
 			   <div class="field-valid-error interest-f-error"> 
@@ -1243,8 +1290,13 @@ get_header(); // This includes the header.php file
     </form>
 </div>
 
+<<<<<<< HEAD
 <script>
 	
+=======
+
+<script>
+>>>>>>> 1a345f53bf303ef4add3131a6410deda042cbdc2
 function checking(nextStep) {
     const currentStepContainer = document.querySelector(`[data-step="${nextStep}"]`);
     const requiredFields = currentStepContainer.querySelectorAll('input[required], select[required], textarea[required]');
@@ -1277,6 +1329,7 @@ function checking(nextStep) {
     });
 }
 	
+<<<<<<< HEAD
 	
 function toggleCheckboxSelect(checkbox) {
     // Get the corresponding label
@@ -1296,6 +1349,11 @@ function toggleCheckboxSelect(checkbox) {
     }
 }
 
+=======
+
+	
+	
+>>>>>>> 1a345f53bf303ef4add3131a6410deda042cbdc2
 </script>
 
 <?php get_footer(); ?>
